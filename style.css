@@ -26,6 +26,7 @@ body {
   );
   max-width: 404px;
   margin: 0 auto;
+  position: relative;
 }
 
 section {
@@ -295,7 +296,7 @@ section {
 }
 
 .bottom {
-  width: 404px;
+  width: 100%;
   height: 111px;
   left: 0px;
   top: 763px;
@@ -309,4 +310,5 @@ section {
   z-index: 10;
   position: fixed;
   top: calc(100% - 111px);
+  left: 0;
 }
