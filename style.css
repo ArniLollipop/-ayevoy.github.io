@@ -31,17 +31,21 @@ body {
 section {
   width: 100%;
   padding: 0px 17px;
+  position: relative;
 }
 
 .flex {
   display: flex;
 }
 
+.border {
+  border-radius: 0px 0px 24px 24px;
+}
+
 .iphone {
-  padding: 15px;
+  padding: 15px 17px 15px 20px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0px 0px 24px 24px;
 }
 
 .iphone-right {
@@ -164,4 +168,145 @@ section {
   display: block;
   margin: 0 auto;
   margin-top: 35px;
+}
+
+.login-normal {
+  width: 102px;
+  height: 27px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 17px;
+  position: relative;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-normal {
+  width: 102px;
+  height: 27px;
+}
+
+.logo-plus {
+  margin-top: 5px;
+}
+
+.header-lang {
+  padding: 0px 0px 5px;
+  width: 24px;
+  height: 24px;
+  background: #747d88;
+  border-radius: 100px;
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.logo {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.offers-section {
+  margin-top: 15px;
+}
+
+.offers-arrowLeft {
+  display: block;
+}
+
+.offers-text {
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+
+.staff {
+  margin-top: 31px;
+}
+
+.staff-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.staff-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.staff-info__img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.staff-info__name {
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+
+.staff-info__post {
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #747d88;
+}
+
+.arrowRight {
+  transform: rotate(180deg);
+}
+
+.arrowRight:hover,
+.arrowRight:focus {
+  stroke: #06bee1;
+}
+
+.staff-one:last-child {
+  z-index: 15;
+  position: relative;
+}
+
+.bottom {
+  width: 404px;
+  height: 111px;
+  left: 0px;
+  top: 763px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 70.72%
+  );
+  border-radius: 24px 24px 0px 0px;
+  z-index: 10;
+  position: fixed;
+  top: calc(100% - 111px);
 }
