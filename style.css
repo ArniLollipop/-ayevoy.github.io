@@ -684,3 +684,57 @@ section {
 .mt-15 {
   margin-top: 15px;
 }
+
+.res-box {
+  margin-top: 26px;
+}
+
+.res-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background: #ffffff;
+  border: 1px solid #f9f9f9;
+  border-radius: 300px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.res-text__name {
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  padding: 0px;
+}
+
+.res-text__post {
+  padding: 0px;
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #747d88;
+}
+
+.res-info {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.res-info:last-child {
+  z-index: 20;
+  position: relative;
+}

@@ -18,7 +18,7 @@
       <img src="../images/Logo.svg" alt="" class="logo" />
       <button class="header-lang">ru</button>
     </header>
-    <section class="offers-section pb-80">
+    <section id="res-info1" class="offers-section">
       <div class="flex justify-between items-center res">
         <div class="flex items-center">
           <button class="offers-arrowLeft">
@@ -74,7 +74,85 @@
           </svg>
         </button>
       </div>
+      <div id="res-box" class="res-box"></div>
       <div class="bottom"></div>
     </section>
+    <script>
+      for (let i = 0; i < 10; i++) {
+        document.getElementById("res-box").innerHTML += `<div class="res-info">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-15">
+              <div class="res-logo">
+                <img src="../images/Logo.svg" alt="" />
+              </div>
+              <div class="res-text">
+                <p class="res-text__name">Розовый слоник</p>
+                <span class="res-text__post">Кафе-бар</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <button class="staff-btn">
+                <svg
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 0.875C7 0.391751 7.39175 0 7.875 0H13.125C13.6082 0 14 0.391751 14 0.875V2.625H19.25C19.7332 2.625 20.125 3.01675 20.125 3.5C20.125 3.98325 19.7332 4.375 19.25 4.375H1.75C1.26675 4.375 0.875 3.98325 0.875 3.5C0.875 3.01675 1.26675 2.625 1.75 2.625H7V0.875ZM8.75 2.625H12.25V1.75H8.75V2.625Z"
+                    fill="#747D88"
+                  />
+                  <path
+                    d="M8.75 9.625C9.23325 9.625 9.625 10.0168 9.625 10.5V17.5C9.625 17.9832 9.23325 18.375 8.75 18.375C8.26675 18.375 7.875 17.9832 7.875 17.5V10.5C7.875 10.0168 8.26675 9.625 8.75 9.625Z"
+                    fill="#747D88"
+                  />
+                  <path
+                    d="M13.125 10.5C13.125 10.0168 12.7332 9.625 12.25 9.625C11.7668 9.625 11.375 10.0168 11.375 10.5V17.5C11.375 17.9832 11.7668 18.375 12.25 18.375C12.7332 18.375 13.125 17.9832 13.125 17.5V10.5Z"
+                    fill="#747D88"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.83898 6.4267C3.00517 6.23507 3.24635 6.125 3.5 6.125H17.5C17.7537 6.125 17.9948 6.23507 18.161 6.4267C18.3272 6.61832 18.4021 6.87264 18.3662 7.12374L16.5809 19.6212C16.3961 20.9144 15.2886 21.875 13.9822 21.875H7.01777C5.71144 21.875 4.60389 20.9144 4.41915 19.6212L2.63379 7.12374C2.59792 6.87264 2.67278 6.61832 2.83898 6.4267ZM4.50888 7.875L6.15156 19.3737C6.21314 19.8048 6.58232 20.125 7.01777 20.125H13.9822C14.4177 20.125 14.7869 19.8048 14.8484 19.3737L16.4911 7.875H4.50888Z"
+                    fill="#747D88"
+                  />
+                </svg>
+              </button>
+              <button onclick="resInfo()" class="staff-btn">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  stroke="#747D88"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrowRight"
+                >
+                  <path
+                    d="M4.95835 14.3199L22.4583 14.3199"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      let isRes = false;
+
+      function resInfo() {}
+    </script>
   </body>
 </html>
