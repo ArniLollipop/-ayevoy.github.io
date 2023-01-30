@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../fonts/sf/stylesheet.css" />
+    <link rel="stylesheet" href="../fonts/font/stylesheet.css" />
+    <title>Çayevoy</title>
+  </head>
+  <body>
+    <header class="header border">
+      <div class="header-box">
+        <img src="../images/Çayevoy.svg" alt="" class="logo-normal" />
+        <img src="../images/Plus.svg" alt="" class="logo-plus" />
+      </div>
+      <img src="../images/Logo.svg" alt="" class="logo" />
+      <button class="header-lang">ru</button>
+    </header>
+    <div id="option_back" class="option_back hidden"></div>
+    <div id="option" class="option hidden">
+      <div class="flex items-center justify-between option-filter">
+        <div class="flex gap-10 items-center">
+          <button onclick="modalDown()" class="offers-arrowLeft">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.95835 14.3199L22.4583 14.3199"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <p class="option-title">Период</p>
+        </div>
+        <button class="select-res">Сбросить</button>
+      </div>
+      <button class="option-select">
+        <p class="option-select__text">За неделю</p>
+      </button>
+      <button class="option-select">
+        <p class="option-select__text">За неделю</p>
+      </button>
+      <button class="option-select">
+        <p class="option-select__text">За неделю</p>
+      </button>
+      <button class="option-select">
+        <p class="option-select__text">За неделю</p>
+      </button>
+    </div>
+    <section id="oneOffer" class="offers-section pb-15">
+      <button class="offers-arrowLeft">
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.95835 14.3199L22.4583 14.3199"
+            stroke="#747D88"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+            stroke="#747D88"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="one-offer__box">
+        <img src="../images/staff1.png" alt="" class="one-offer__img" />
+        <div class="one-offer__text center">
+          <p class="staff-info__name center">Шарлотта Яблочная</p>
+          <span>официантка</span>
+        </div>
+      </div>
+      <button class="stat_info">
+        <svg
+          width="37"
+          height="37"
+          viewBox="0 0 37 37"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask id="path-1-inside-1_20_1485" fill="white">
+            <path
+              d="M35.2988 18.6014C35.2988 20.7683 34.872 22.9138 34.0428 24.9157C33.2136 26.9176 31.9983 28.7365 30.4661 30.2687C28.9339 31.8009 27.115 33.0163 25.1131 33.8455C23.1112 34.6747 20.9656 35.1014 18.7988 35.1014C16.632 35.1014 14.4864 34.6747 12.4846 33.8455C10.4827 33.0162 8.66373 31.8009 7.13157 30.2687C5.5994 28.7365 4.38402 26.9176 3.55482 24.9157C2.72561 22.9138 2.29883 20.7682 2.29883 18.6014H4.29883C4.29883 20.5056 4.67388 22.3911 5.40257 24.1503C6.13127 25.9096 7.19933 27.508 8.54578 28.8545C9.89223 30.2009 11.4907 31.269 13.2499 31.9977C15.0091 32.7264 16.8947 33.1014 18.7988 33.1014C20.703 33.1014 22.5885 32.7264 24.3477 31.9977C26.107 31.269 27.7054 30.2009 29.0519 28.8545C30.3983 27.508 31.4664 25.9096 32.1951 24.1504C32.9238 22.3911 33.2988 20.5056 33.2988 18.6014H35.2988Z"
+            />
+          </mask>
+          <path
+            d="M35.2988 18.6014C35.2988 20.7683 34.872 22.9138 34.0428 24.9157C33.2136 26.9176 31.9983 28.7365 30.4661 30.2687C28.9339 31.8009 27.115 33.0163 25.1131 33.8455C23.1112 34.6747 20.9656 35.1014 18.7988 35.1014C16.632 35.1014 14.4864 34.6747 12.4846 33.8455C10.4827 33.0162 8.66373 31.8009 7.13157 30.2687C5.5994 28.7365 4.38402 26.9176 3.55482 24.9157C2.72561 22.9138 2.29883 20.7682 2.29883 18.6014H4.29883C4.29883 20.5056 4.67388 22.3911 5.40257 24.1503C6.13127 25.9096 7.19933 27.508 8.54578 28.8545C9.89223 30.2009 11.4907 31.269 13.2499 31.9977C15.0091 32.7264 16.8947 33.1014 18.7988 33.1014C20.703 33.1014 22.5885 32.7264 24.3477 31.9977C26.107 31.269 27.7054 30.2009 29.0519 28.8545C30.3983 27.508 31.4664 25.9096 32.1951 24.1504C32.9238 22.3911 33.2988 20.5056 33.2988 18.6014H35.2988Z"
+            stroke="#747D88"
+            stroke-width="4"
+            mask="url(#path-1-inside-1_20_1485)"
+          />
+          <mask id="path-2-inside-2_20_1485" fill="white">
+            <path
+              d="M2.94818 14.0181C3.60728 11.7387 4.75024 9.62823 6.29911 7.83072C7.84798 6.03321 9.76631 4.59089 11.9233 3.60216C14.0802 2.61342 16.4251 2.10152 18.7978 2.10138C21.1706 2.10124 23.5155 2.61285 25.6726 3.60132L24.8394 5.41951C22.9438 4.55085 20.8831 4.10125 18.7979 4.10138C16.7128 4.10151 14.6522 4.55136 12.7567 5.42024C10.8612 6.28913 9.17536 7.55662 7.81423 9.13626C6.4531 10.7159 5.44868 12.5705 4.86947 14.5736L2.94818 14.0181Z"
+            />
+          </mask>
+          <path
+            d="M2.94818 14.0181C3.60728 11.7387 4.75024 9.62823 6.29911 7.83072C7.84798 6.03321 9.76631 4.59089 11.9233 3.60216C14.0802 2.61342 16.4251 2.10152 18.7978 2.10138C21.1706 2.10124 23.5155 2.61285 25.6726 3.60132L24.8394 5.41951C22.9438 4.55085 20.8831 4.10125 18.7979 4.10138C16.7128 4.10151 14.6522 4.55136 12.7567 5.42024C10.8612 6.28913 9.17536 7.55662 7.81423 9.13626C6.4531 10.7159 5.44868 12.5705 4.86947 14.5736L2.94818 14.0181Z"
+            stroke="#747D88"
+            stroke-width="4"
+            mask="url(#path-2-inside-2_20_1485)"
+          />
+          <mask id="path-3-inside-3_20_1485" fill="white">
+            <path
+              d="M9.30036 27.6997C7.65903 26.0584 6.4867 24.0079 5.90495 21.7608C5.32319 19.5137 5.35321 17.1518 5.99188 14.9202C6.63054 12.6886 7.8546 10.6685 9.53711 9.06946C11.2196 7.47038 13.2993 6.35053 15.5604 5.82607C17.8216 5.30161 20.1819 5.39163 22.3965 6.0868C24.6112 6.78197 26.5995 8.05697 28.1553 9.77957C29.7112 11.5022 30.7778 13.6096 31.2446 15.8834C31.7115 18.1571 31.5615 20.5144 30.8103 22.7106L29.3181 22.2003C29.9783 20.2702 30.1101 18.1987 29.6998 16.2005C29.2896 14.2024 28.3522 12.3504 26.985 10.8366C25.6178 9.32279 23.8704 8.20234 21.9242 7.59143C19.978 6.98052 17.9038 6.90141 15.9168 7.3623C13.9297 7.82319 12.1021 8.8073 10.6235 10.2126C9.14496 11.6178 8.06927 13.3931 7.50802 15.3541C6.94677 17.3152 6.92039 19.3908 7.43163 21.3655C7.94287 23.3402 8.9731 25.1422 10.4155 26.5846L9.30036 27.6997Z"
+            />
+          </mask>
+          <path
+            d="M9.30036 27.6997C7.65903 26.0584 6.4867 24.0079 5.90495 21.7608C5.32319 19.5137 5.35321 17.1518 5.99188 14.9202C6.63054 12.6886 7.8546 10.6685 9.53711 9.06946C11.2196 7.47038 13.2993 6.35053 15.5604 5.82607C17.8216 5.30161 20.1819 5.39163 22.3965 6.0868C24.6112 6.78197 26.5995 8.05697 28.1553 9.77957C29.7112 11.5022 30.7778 13.6096 31.2446 15.8834C31.7115 18.1571 31.5615 20.5144 30.8103 22.7106L29.3181 22.2003C29.9783 20.2702 30.1101 18.1987 29.6998 16.2005C29.2896 14.2024 28.3522 12.3504 26.985 10.8366C25.6178 9.32279 23.8704 8.20234 21.9242 7.59143C19.978 6.98052 17.9038 6.90141 15.9168 7.3623C13.9297 7.82319 12.1021 8.8073 10.6235 10.2126C9.14496 11.6178 8.06927 13.3931 7.50802 15.3541C6.94677 17.3152 6.92039 19.3908 7.43163 21.3655C7.94287 23.3402 8.9731 25.1422 10.4155 26.5846L9.30036 27.6997Z"
+            stroke="#06BEE1"
+            stroke-width="4"
+            mask="url(#path-3-inside-3_20_1485)"
+          />
+          <mask id="path-4-inside-4_20_1485" fill="white">
+            <path
+              d="M29.1491 25.9744C28.1675 27.3728 26.9201 28.5643 25.4781 29.4806C24.0361 30.397 22.4277 31.0204 20.7448 31.3152C19.0619 31.61 17.3374 31.5704 15.6697 31.1987C14.0021 30.827 12.424 30.1305 11.0256 29.149L11.9315 27.8582C13.1605 28.7208 14.5473 29.3328 16.0128 29.6595C17.4783 29.9861 18.9938 30.0209 20.4727 29.7618C21.9516 29.5028 23.3651 28.9549 24.6323 28.1497C25.8995 27.3443 26.9957 26.2973 27.8583 25.0684L29.1491 25.9744Z"
+            />
+          </mask>
+          <path
+            d="M29.1491 25.9744C28.1675 27.3728 26.9201 28.5643 25.4781 29.4806C24.0361 30.397 22.4277 31.0204 20.7448 31.3152C19.0619 31.61 17.3374 31.5704 15.6697 31.1987C14.0021 30.827 12.424 30.1305 11.0256 29.149L11.9315 27.8582C13.1605 28.7208 14.5473 29.3328 16.0128 29.6595C17.4783 29.9861 18.9938 30.0209 20.4727 29.7618C21.9516 29.5028 23.3651 28.9549 24.6323 28.1497C25.8995 27.3443 26.9957 26.2973 27.8583 25.0684L29.1491 25.9744Z"
+            stroke="#00538A"
+            stroke-width="4"
+            mask="url(#path-4-inside-4_20_1485)"
+          />
+        </svg>
+        <div class="stat-block mt-8">
+          <div class="flex items-center justify-between">
+            <h6 class="stat-text">Оставлено чаевых сегодня</h6>
+            <svg
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.8835 0.361938L11.8198 1.30475L6.05481 7.10949L0.289795 1.30475L1.22615 0.361938L6.05481 5.22387L10.8835 0.361938Z"
+                fill="#747D88"
+              />
+            </svg>
+          </div>
+          <p class="stat-num">15 000 шт</p>
+        </div>
+      </button>
+      <div class="flex items-center gap-22 mt-15">
+        <button onclick="modalDown()" class="select-btn">
+          Период
+          <svg
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.8835 0.361938L11.8198 1.30475L6.05481 7.10949L0.289795 1.30475L1.22615 0.361938L6.05481 5.22387L10.8835 0.361938Z"
+              fill="#747D88"
+            />
+          </svg>
+        </button>
+        <button onclick="modalDown()" class="select-btn">
+          По ресторану
+          <svg
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.8835 0.361938L11.8198 1.30475L6.05481 7.10949L0.289795 1.30475L1.22615 0.361938L6.05481 5.22387L10.8835 0.361938Z"
+              fill="#747D88"
+            />
+          </svg>
+        </button>
+        <button class="select-res">Сбросить</button>
+      </div>
+      <div class="mt-30">
+        <div class="date-info">
+          <p class="date">19.01.2023</p>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+        </div>
+        <div class="date-info">
+          <p class="date">19.01.2023</p>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+        </div>
+        <div class="date-info">
+          <p class="date">19.01.2023</p>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+        </div>
+        <div class="date-info">
+          <p class="date">19.01.2023</p>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+          <div class="flex gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom"></div>
+    </section>
+    <script>
+      let isModal = false;
+
+      function modalDown() {
+        if (!isModal) {
+          document.getElementById("option_back").classList.remove("hidden");
+          document.getElementById("option").classList.remove("hidden");
+          isModal = !isModal;
+        } else {
+          document.getElementById("option_back").classList.add("hidden");
+          document.getElementById("option").classList.add("hidden");
+          isModal = !isModal;
+        }
+      }
+    </script>
+  </body>
+</html>
