@@ -1039,6 +1039,7 @@ section {
   position: fixed;
   bottom: 0;
   max-width: 404px;
+  width: 100%;
   border-radius: 24px 24px 0px 0px;
 }
 
@@ -1167,4 +1168,39 @@ section {
   color: #00538a;
   border-bottom: 1px solid #00538a;
   padding-bottom: 1px;
+}
+
+.add-btn__color {
+  background: #06bee1;
+}
+
+.login-btn__color {
+  background: #06bee1;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.login-label__red {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ec156b;
+}
+
+.input-red__text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  color: #ec156b;
 }
