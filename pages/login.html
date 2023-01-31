@@ -10,6 +10,56 @@
     <title>Çayevoy</title>
   </head>
   <body>
+    <div
+      onclick="phoneSelect(0)"
+      id="option_back3"
+      class="option_back hidden"
+    ></div>
+    <div id="option3" class="option -translateY">
+      <div class="flex items-center justify-between option-filter">
+        <div class="flex gap-10 items-center">
+          <button onclick="phoneSelect(0)" class="offers-arrowLeft">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-2"
+            >
+              <path
+                d="M4.95835 14.3199L22.4583 14.3199"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <p class="option-title">Период</p>
+        </div>
+        <button onclick="phoneSelect(0)" class="select-res">Сбросить</button>
+      </div>
+      <button onclick="phoneSelect(2)" class="option-select">
+        <p class="option-select__text">+7</p>
+      </button>
+      <button onclick="phoneSelect(3)" class="option-select">
+        <p class="option-select__text">+6</p>
+      </button>
+      <button onclick="phoneSelect(4)" class="option-select">
+        <p class="option-select__text">+5</p>
+      </button>
+      <button onclick="phoneSelect(4)" class="option-select">
+        <p class="option-select__text">+5</p>
+      </button>
+    </div>
     <section class="section">
       <div class="logo-box">
         <img src="../images/Çayevoy.svg" alt="logo" class="logo-big" />
@@ -54,5 +104,70 @@
         <button class="login-submit">Войти</button>
       </div>
     </section>
+    <script>
+      function phoneSelect(id) {
+        if (id === 0) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+        } else if (id === 1) {
+          document.getElementById("option_back3").classList.remove("hidden");
+          document.getElementById("option3").classList.remove("-translateY");
+        } else if (id === 2) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+          document.getElementById("phone-Select").innerHTML = `+7
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>`;
+        } else if (id === 3) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+          document.getElementById("phone-Select").innerHTML = `+6
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>`;
+        } else if (id == 4) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+          document.getElementById("phone-Select").innerHTML = `+5
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>`;
+        }
+      }
+    </script>
   </body>
 </html>

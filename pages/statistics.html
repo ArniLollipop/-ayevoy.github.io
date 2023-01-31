@@ -15,7 +15,7 @@
       id="langSelect_back"
       class="option_back hidden"
     ></div>
-    <div id="langSelect" class="option option-lang hidden">
+    <div id="langSelect" class="option option-lang translateY">
       <div class="flex items-center justify-between option-filter">
         <div class="flex gap-10 items-center">
           <button onclick="langSelect(0)" class="offers-arrowLeft">
@@ -71,7 +71,7 @@
       id="option_back1"
       class="option_back hidden"
     ></div>
-    <div id="option1" class="option hidden">
+    <div id="option1" class="option -translateY">
       <div class="flex items-center justify-between option-filter">
         <div class="flex gap-10 items-center">
           <button onclick="sortingDate(0)" class="offers-arrowLeft">
@@ -289,27 +289,27 @@
       function sortingDate(id) {
         if (id === 0) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
         } else if (id === 1) {
           document.getElementById("option_back1").classList.remove("hidden");
-          document.getElementById("option1").classList.remove("hidden");
+          document.getElementById("option1").classList.remove("-translateY");
         } else if (id === 2) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
           let count = document.querySelectorAll(".dateOne");
           for (let i = 0; i <= count.length; i++) {
             count[i].innerHTML = "сегодня";
           }
         } else if (id === 3) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
           let count = document.querySelectorAll(".dateOne");
           for (let i = 0; i <= count.length; i++) {
             count[i].innerHTML = "за неделю";
           }
         } else if (id == 4) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
           let count = document.querySelectorAll(".dateOne");
           for (let i = 0; i <= count.length; i++) {
             count[i].innerHTML = "за месяц";

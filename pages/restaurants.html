@@ -15,7 +15,7 @@
       id="langSelect_back"
       class="option_back hidden"
     ></div>
-    <div id="langSelect" class="option option-lang hidden">
+    <div id="langSelect" class="option option-lang translateY">
       <div class="flex items-center justify-between option-filter">
         <div class="flex gap-10 items-center">
           <button onclick="langSelect(0)" class="offers-arrowLeft">
@@ -71,7 +71,7 @@
       id="option_back1"
       class="option_back hidden"
     ></div>
-    <div id="option1" class="option hidden">
+    <div id="option1" class="option -translateY">
       <div class="flex items-center justify-between option-filter">
         <div class="flex gap-10 items-center">
           <button onclick="sortingDate(0)" class="offers-arrowLeft">
@@ -118,7 +118,7 @@
       id="option_back2"
       class="option_back hidden"
     ></div>
-    <div id="option2" class="option hidden">
+    <div id="option2" class="option -translateY">
       <div class="flex items-center justify-between option-filter">
         <div class="flex gap-10 items-center">
           <button onclick="selectOffer(0)" class="offers-arrowLeft">
@@ -557,47 +557,206 @@
           </div>
         </div>
       </div>
-      <div id="option-res2" class="staff-one mt-15 hidden">
-        <div class="staff-info">
-          <img src="../images/staff1.png" alt="" class="staff-info__img" />
-          <div class="staff-info__about">
-            <p class="staff-info__name">Шарлотта Яблочная</p>
-            <span class="staff-info__post">официантка</span>
+      <div id="option-res2" class="mt-15 hidden">
+        <div class="staff-one">
+          <div class="staff-info">
+            <img src="../images/staff1.png" alt="" class="staff-info__img" />
+            <div class="staff-info__about">
+              <p class="staff-info__name">Шарлотта Яблочная</p>
+              <span class="staff-info__post">официантка</span>
+            </div>
           </div>
+          <button class="staff-btn">
+            <svg
+              width="21"
+              height="22"
+              viewBox="0 0 21 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 0.875C7 0.391751 7.39175 0 7.875 0H13.125C13.6082 0 14 0.391751 14 0.875V2.625H19.25C19.7332 2.625 20.125 3.01675 20.125 3.5C20.125 3.98325 19.7332 4.375 19.25 4.375H1.75C1.26675 4.375 0.875 3.98325 0.875 3.5C0.875 3.01675 1.26675 2.625 1.75 2.625H7V0.875ZM8.75 2.625H12.25V1.75H8.75V2.625Z"
+                fill="#747D88"
+              />
+              <path
+                d="M8.75 9.625C9.23325 9.625 9.625 10.0168 9.625 10.5V17.5C9.625 17.9832 9.23325 18.375 8.75 18.375C8.26675 18.375 7.875 17.9832 7.875 17.5V10.5C7.875 10.0168 8.26675 9.625 8.75 9.625Z"
+                fill="#747D88"
+              />
+              <path
+                d="M13.125 10.5C13.125 10.0168 12.7332 9.625 12.25 9.625C11.7668 9.625 11.375 10.0168 11.375 10.5V17.5C11.375 17.9832 11.7668 18.375 12.25 18.375C12.7332 18.375 13.125 17.9832 13.125 17.5V10.5Z"
+                fill="#747D88"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.83898 6.4267C3.00517 6.23507 3.24635 6.125 3.5 6.125H17.5C17.7537 6.125 17.9948 6.23507 18.161 6.4267C18.3272 6.61832 18.4021 6.87264 18.3662 7.12374L16.5809 19.6212C16.3961 20.9144 15.2886 21.875 13.9822 21.875H7.01777C5.71144 21.875 4.60389 20.9144 4.41915 19.6212L2.63379 7.12374C2.59792 6.87264 2.67278 6.61832 2.83898 6.4267ZM4.50888 7.875L6.15156 19.3737C6.21314 19.8048 6.58232 20.125 7.01777 20.125H13.9822C14.4177 20.125 14.7869 19.8048 14.8484 19.3737L16.4911 7.875H4.50888Z"
+                fill="#747D88"
+              />
+            </svg>
+          </button>
         </div>
-        <button class="staff-btn">
+      </div>
+      <div class="bottom"></div>
+    </section>
+    <section id="add-section1" class="offers-section hidden">
+      <div class="flex items-center">
+        <button onclick="addStaff()" class="offers-arrowLeft">
           <svg
-            width="21"
-            height="22"
-            viewBox="0 0 21 22"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.95835 14.3199L22.4583 14.3199"
+              stroke="#747D88"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+              stroke="#747D88"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <p class="add-head">Добавление нового сотрудника</p>
+      </div>
+      <input id="input-file" type="file" class="hidden" />
+      <button
+        onclick="document.getElementById(`input-file`).click()"
+        class="add-btns"
+      >
+        <div class="add-btn add-btn__icon">
+          <svg
+            width="32"
+            height="28"
+            viewBox="0 0 32 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
-              d="M7 0.875C7 0.391751 7.39175 0 7.875 0H13.125C13.6082 0 14 0.391751 14 0.875V2.625H19.25C19.7332 2.625 20.125 3.01675 20.125 3.5C20.125 3.98325 19.7332 4.375 19.25 4.375H1.75C1.26675 4.375 0.875 3.98325 0.875 3.5C0.875 3.01675 1.26675 2.625 1.75 2.625H7V0.875ZM8.75 2.625H12.25V1.75H8.75V2.625Z"
-              fill="#747D88"
-            />
-            <path
-              d="M8.75 9.625C9.23325 9.625 9.625 10.0168 9.625 10.5V17.5C9.625 17.9832 9.23325 18.375 8.75 18.375C8.26675 18.375 7.875 17.9832 7.875 17.5V10.5C7.875 10.0168 8.26675 9.625 8.75 9.625Z"
-              fill="#747D88"
-            />
-            <path
-              d="M13.125 10.5C13.125 10.0168 12.7332 9.625 12.25 9.625C11.7668 9.625 11.375 10.0168 11.375 10.5V17.5C11.375 17.9832 11.7668 18.375 12.25 18.375C12.7332 18.375 13.125 17.9832 13.125 17.5V10.5Z"
-              fill="#747D88"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M2.83898 6.4267C3.00517 6.23507 3.24635 6.125 3.5 6.125H17.5C17.7537 6.125 17.9948 6.23507 18.161 6.4267C18.3272 6.61832 18.4021 6.87264 18.3662 7.12374L16.5809 19.6212C16.3961 20.9144 15.2886 21.875 13.9822 21.875H7.01777C5.71144 21.875 4.60389 20.9144 4.41915 19.6212L2.63379 7.12374C2.59792 6.87264 2.67278 6.61832 2.83898 6.4267ZM4.50888 7.875L6.15156 19.3737C6.21314 19.8048 6.58232 20.125 7.01777 20.125H13.9822C14.4177 20.125 14.7869 19.8048 14.8484 19.3737L16.4911 7.875H4.50888Z"
-              fill="#747D88"
+              d="M8.66702 5.02451C8.76963 4.88087 8.8836 4.70503 9.02893 4.46793C9.08196 4.3814 9.22648 4.14133 9.33424 3.9623L9.33458 3.96175L9.33536 3.96045C9.39256 3.86543 9.43923 3.7879 9.45606 3.76018C10.6567 1.78265 11.5295 0.875 13.1033 0.875H20.3451V3.79167H13.1033C12.9777 3.79167 12.5826 4.20251 11.9275 5.28148L11.8221 5.45641L11.822 5.45656C11.7133 5.63715 11.555 5.9002 11.494 5.99971C11.3159 6.29026 11.1679 6.51857 11.0186 6.72766C10.3693 7.63643 9.72044 8.16667 8.75824 8.16667H4.41318C3.61327 8.16667 2.96482 8.81958 2.96482 9.625V22.75C2.96482 23.5554 3.61327 24.2083 4.41318 24.2083H27.5868C28.3867 24.2083 29.0352 23.5554 29.0352 22.75V14H31.9319V22.75C31.9319 25.1662 29.9865 27.125 27.5868 27.125H4.41318C2.01347 27.125 0.0681152 25.1662 0.0681152 22.75V9.625C0.0681152 7.20875 2.01347 5.25 4.41318 5.25H8.49203C8.54025 5.1945 8.59935 5.11923 8.66702 5.02451ZM23.2418 8.16667V5.25H26.1385V2.33333H29.0352V5.25H31.9319V8.16667H29.0352V11.0833H26.1385V8.16667H23.2418ZM16 22.75C12.0005 22.75 8.75824 19.4854 8.75824 15.4583C8.75824 11.4313 12.0005 8.16667 16 8.16667C19.9995 8.16667 23.2418 11.4313 23.2418 15.4583C23.2418 19.4854 19.9995 22.75 16 22.75ZM16 19.8333C18.3997 19.8333 20.3451 17.8746 20.3451 15.4583C20.3451 13.0421 18.3997 11.0833 16 11.0833C13.6003 11.0833 11.6549 13.0421 11.6549 15.4583C11.6549 17.8746 13.6003 19.8333 16 19.8333Z"
+              fill="black"
             />
           </svg>
-        </button>
-      </div>
-      <div class="bottom"></div>
+        </div>
+        <div class="add-btn add-btn__text">
+          Загрузить <br />
+          изображение
+        </div>
+      </button>
+      <form action="#" class="comment">
+        <span class="phone-text">Имя</span>
+        <label for="offer" class="login-label mb-5">
+          <input class="offer-comment" type="text" id="name" />
+        </label>
+      </form>
+      <form action="#" class="comment mt-15">
+        <span class="phone-text">Имя</span>
+        <label for="offer" class="login-label mb-5">
+          <input class="offer-comment" type="text" id="name" />
+        </label>
+      </form>
+      <form action="#" class="comment mt-15">
+        <span class="phone-text">Должность</span>
+        <label for="offer" class="login-label mb-5">
+          <input class="offer-comment" type="text" id="name" />
+        </label>
+      </form>
+      <form action="#" class="form mt-15">
+        <span class="phone-text">Телефон</span>
+        <label for="phone" class="login-label">
+          <div class="relative">
+            <button
+              id="phone-Select"
+              onclick="phoneSelect(1)"
+              class="login-btn"
+            >
+              +7
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>
+            </button>
+          </div>
+          <input
+            class="login-input"
+            type="tel"
+            placeholder="0 0 0   0 0 0  0 0  0 0 "
+          />
+        </label>
+      </form>
+      <button class="login-submit">Добавить сотрудника</button>
     </section>
+    <div
+      onclick="phoneSelect(0)"
+      id="option_back3"
+      class="option_back hidden"
+    ></div>
+    <div id="option3" class="option -translateY">
+      <div class="flex items-center justify-between option-filter">
+        <div class="flex gap-10 items-center">
+          <button onclick="phoneSelect(0)" class="offers-arrowLeft">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-2"
+            >
+              <path
+                d="M4.95835 14.3199L22.4583 14.3199"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <p class="option-title">Период</p>
+        </div>
+        <button onclick="phoneSelect(0)" class="select-res">Сбросить</button>
+      </div>
+      <button onclick="phoneSelect(2)" class="option-select">
+        <p class="option-select__text">+7</p>
+      </button>
+      <button onclick="phoneSelect(3)" class="option-select">
+        <p class="option-select__text">+6</p>
+      </button>
+      <button onclick="phoneSelect(4)" class="option-select">
+        <p class="option-select__text">+5</p>
+      </button>
+      <button onclick="phoneSelect(4)" class="option-select">
+        <p class="option-select__text">+5</p>
+      </button>
+    </div>
     <script>
       for (let i = 0; i < 10; i++) {
         document.getElementById("res-box").innerHTML += `<div class="res-info">
@@ -690,27 +849,27 @@
       function sortingDate(id) {
         if (id === 0) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
         } else if (id === 1) {
           document.getElementById("option_back1").classList.remove("hidden");
-          document.getElementById("option1").classList.remove("hidden");
+          document.getElementById("option1").classList.remove("-translateY");
         } else if (id === 2) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
           let count = document.querySelectorAll(".dateOne");
           for (let i = 0; i <= count.length; i++) {
             count[i].innerHTML = "сегодня";
           }
         } else if (id === 3) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
           let count = document.querySelectorAll(".dateOne");
           for (let i = 0; i <= count.length; i++) {
             count[i].innerHTML = "за неделю";
           }
         } else if (id == 4) {
           document.getElementById("option_back1").classList.add("hidden");
-          document.getElementById("option1").classList.add("hidden");
+          document.getElementById("option1").classList.add("-translateY");
           let count = document.querySelectorAll(".dateOne");
           for (let i = 0; i <= count.length; i++) {
             count[i].innerHTML = "за месяц";
@@ -720,13 +879,13 @@
       function selectOffer(id) {
         if (id === 0) {
           document.getElementById("option_back2").classList.add("hidden");
-          document.getElementById("option2").classList.add("hidden");
+          document.getElementById("option2").classList.add("-translateY");
         } else if (id === 1) {
           document.getElementById("option_back2").classList.remove("hidden");
-          document.getElementById("option2").classList.remove("hidden");
+          document.getElementById("option2").classList.remove("-translateY");
         } else if (id === 2) {
           document.getElementById("option_back2").classList.add("hidden");
-          document.getElementById("option2").classList.add("hidden");
+          document.getElementById("option2").classList.add("-translateY");
           document.getElementById("option-res__btn").innerHTML = `
             По ресторану
           <svg
@@ -748,7 +907,7 @@
           document.getElementById("option-res2").classList.remove("hidden");
         } else if (id === 3) {
           document.getElementById("option_back2").classList.add("hidden");
-          document.getElementById("option2").classList.add("hidden");
+          document.getElementById("option2").classList.add("-translateY");
           document.getElementById("option-res__btn").innerHTML = `
             По персоналу
           <svg
@@ -768,6 +927,84 @@
           `;
           document.getElementById("option-res1").classList.add("hidden");
           document.getElementById("option-res2").classList.remove("hidden");
+        }
+      }
+      let isStaff = false;
+
+      function addStaff() {
+        if (!isStaff) {
+          document.getElementById("res-info1").classList.add("hidden");
+          document.getElementById("res-info2").classList.add("hidden");
+          document.getElementById("add-section1").classList.remove("hidden");
+          isStaff = !isStaff;
+        } else {
+          document.getElementById("res-info2").classList.remove("hidden");
+          document.getElementById("add-section1").classList.add("hidden");
+          isStaff = !isStaff;
+        }
+      }
+
+      function phoneSelect(id) {
+        if (id === 0) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+        } else if (id === 1) {
+          document.getElementById("option_back3").classList.remove("hidden");
+          document.getElementById("option3").classList.remove("-translateY");
+        } else if (id === 2) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+          document.getElementById("phone-Select").innerHTML = `+7
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>`;
+        } else if (id === 3) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+          document.getElementById("phone-Select").innerHTML = `+6
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>`;
+        } else if (id == 4) {
+          document.getElementById("option_back3").classList.add("hidden");
+          document.getElementById("option3").classList.add("-translateY");
+          document.getElementById("phone-Select").innerHTML = `+5
+              <svg
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.774 0.0866699L11.7103 1.02948L5.94531 6.83422L0.180298 1.02948L1.11666 0.0866699L5.94531 4.9486L10.774 0.0866699Z"
+                  fill="#747D88"
+                />
+              </svg>`;
         }
       }
     </script>
