@@ -141,9 +141,8 @@ function oneOffer(id) {
       <form action="#" class="mt-5">
         <span class="phone-text">Введите сумму</span>
         <label for="offer" class="login-label mb-5">
-          <input class="offer-input" type="text" id="offer" placeholder="0 ₼" />
+          <input class="offer-input" type="text" id="manats" onchange = "Manats()" placeholder="0" />
         </label>
-        <span class="offer-input__info">От 3 до 100 ₼</span>
         <div class="offer-btns">
           <button onclick="offerValue(3)" class="offer-btn">3 ₼</button>
           <button onclick="offerValue(5)" class="offer-btn">5 ₼</button>
@@ -160,6 +159,8 @@ function oneOffer(id) {
             viewBox="0 0 29 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class = "star"
+            onclick = "star(1)"
           >
             <path
               d="M6.35426 17.4125L5.57096 18.0341L6.35426 17.4124L1.47885 11.2692L9.03407 9.16485L8.76575 8.20152L9.03407 9.16485C9.49712 9.03588 9.89823 8.74445 10.164 8.34392L14.5 1.80875L18.836 8.34392C19.1018 8.74445 19.5029 9.03588 19.9659 9.16485L27.5211 11.2692L22.6457 17.4125C22.3469 17.789 22.1937 18.2605 22.2142 18.7407L22.5475 26.5765L15.1983 23.838L14.8492 24.7751L15.1983 23.838C14.7479 23.6702 14.2521 23.6702 13.8017 23.838L14.1508 24.7751L13.8017 23.838L6.45249 26.5765L6.78585 18.7407C6.80628 18.2605 6.65306 17.789 6.35426 17.4125Z"
@@ -173,6 +174,8 @@ function oneOffer(id) {
             viewBox="0 0 29 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class = "star"
+            onclick = "star(2)"
           >
             <path
               d="M6.35426 17.4125L5.57096 18.0341L6.35426 17.4124L1.47885 11.2692L9.03407 9.16485L8.76575 8.20152L9.03407 9.16485C9.49712 9.03588 9.89823 8.74445 10.164 8.34392L14.5 1.80875L18.836 8.34392C19.1018 8.74445 19.5029 9.03588 19.9659 9.16485L27.5211 11.2692L22.6457 17.4125C22.3469 17.789 22.1937 18.2605 22.2142 18.7407L22.5475 26.5765L15.1983 23.838L14.8492 24.7751L15.1983 23.838C14.7479 23.6702 14.2521 23.6702 13.8017 23.838L14.1508 24.7751L13.8017 23.838L6.45249 26.5765L6.78585 18.7407C6.80628 18.2605 6.65306 17.789 6.35426 17.4125Z"
@@ -186,6 +189,8 @@ function oneOffer(id) {
             viewBox="0 0 29 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class = "star"
+            onclick = "star(3)"
           >
             <path
               d="M6.35426 17.4125L5.57096 18.0341L6.35426 17.4124L1.47885 11.2692L9.03407 9.16485L8.76575 8.20152L9.03407 9.16485C9.49712 9.03588 9.89823 8.74445 10.164 8.34392L14.5 1.80875L18.836 8.34392C19.1018 8.74445 19.5029 9.03588 19.9659 9.16485L27.5211 11.2692L22.6457 17.4125C22.3469 17.789 22.1937 18.2605 22.2142 18.7407L22.5475 26.5765L15.1983 23.838L14.8492 24.7751L15.1983 23.838C14.7479 23.6702 14.2521 23.6702 13.8017 23.838L14.1508 24.7751L13.8017 23.838L6.45249 26.5765L6.78585 18.7407C6.80628 18.2605 6.65306 17.789 6.35426 17.4125Z"
@@ -199,6 +204,8 @@ function oneOffer(id) {
             viewBox="0 0 29 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class = "star"
+            onclick = "star(4)"
           >
             <path
               d="M6.35426 17.4125L5.57096 18.0341L6.35426 17.4124L1.47885 11.2692L9.03407 9.16485L8.76575 8.20152L9.03407 9.16485C9.49712 9.03588 9.89823 8.74445 10.164 8.34392L14.5 1.80875L18.836 8.34392C19.1018 8.74445 19.5029 9.03588 19.9659 9.16485L27.5211 11.2692L22.6457 17.4125C22.3469 17.789 22.1937 18.2605 22.2142 18.7407L22.5475 26.5765L15.1983 23.838L14.8492 24.7751L15.1983 23.838C14.7479 23.6702 14.2521 23.6702 13.8017 23.838L14.1508 24.7751L13.8017 23.838L6.45249 26.5765L6.78585 18.7407C6.80628 18.2605 6.65306 17.789 6.35426 17.4125Z"
@@ -212,6 +219,8 @@ function oneOffer(id) {
             viewBox="0 0 29 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class = "star"
+            onclick = "star(5)"
           >
             <path
               d="M6.35426 17.4125L5.57096 18.0341L6.35426 17.4124L1.47885 11.2692L9.03407 9.16485L8.76575 8.20152L9.03407 9.16485C9.49712 9.03588 9.89823 8.74445 10.164 8.34392L14.5 1.80875L18.836 8.34392C19.1018 8.74445 19.5029 9.03588 19.9659 9.16485L27.5211 11.2692L22.6457 17.4125C22.3469 17.789 22.1937 18.2605 22.2142 18.7407L22.5475 26.5765L15.1983 23.838L14.8492 24.7751L15.1983 23.838C14.7479 23.6702 14.2521 23.6702 13.8017 23.838L14.1508 24.7751L13.8017 23.838L6.45249 26.5765L6.78585 18.7407C6.80628 18.2605 6.65306 17.789 6.35426 17.4125Z"
@@ -245,12 +254,12 @@ function oneOffer(id) {
               />
             </svg>
           </button>
-          <span class="agree-text"
-            >Я хочу компенсировать комиссию сервиса транзакций 39₼, чтобы
-            покрыть стоимость оплатой карты и поддержание сайта</span
+          <span id="manatsCount" class="agree-text"
+            >Я хочу компенсировать 0 ₼, чтобы покрыть стоимость оплаты картой и поддержания сайта</span
           >
         </div>
         <button class="agree-btn">Оплатить картой</button>
+        <p class = "agree-text center">Нажимая на кнопку оплаты, <br>вы соглашаетесь с <a href="oferta.html" class = "agree-text border-bottom">условиями</a></p>
       </form>
         `;
       }
@@ -262,10 +271,6 @@ function oneOffer(id) {
   }
 }
 
-function offerValue(sum) {
-  document.getElementById("offer").value = `${sum} ₼`;
-}
-
 let isCheck = false;
 
 function checkbox() {
@@ -275,5 +280,31 @@ function checkbox() {
   } else {
     document.getElementById("checkbox").classList.add("opacity");
     isCheck = !isCheck;
+  }
+}
+
+function Manats() {
+  let count = document.getElementById("manats").value;
+  document.getElementById("manatsCount").innerHTML = `Я хочу компенсировать ${
+    count * 0.05
+  } ₼, чтобы покрыть стоимость оплаты картой и поддержания сайта`;
+  console.log(count);
+}
+
+function offerValue(sum) {
+  document.getElementById("manats").value = sum;
+  Manats();
+}
+
+function star(count) {
+  let countStar = document.querySelectorAll(".star");
+  let i = 0;
+  for (let i = 0; i <= countStar.length; i++) {
+    if (count > 0) {
+      countStar[i].classList.add("star-fill");
+      count--;
+    } else {
+      countStar[i].classList.remove("star-fill");
+    }
   }
 }

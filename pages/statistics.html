@@ -10,23 +10,71 @@
     <title>Çayevoy</title>
   </head>
   <body>
+    <div
+      onclick="langSelect(0)"
+      id="langSelect_back"
+      class="option_back hidden"
+    ></div>
+    <div id="langSelect" class="option option-lang hidden">
+      <div class="flex items-center justify-between option-filter">
+        <div class="flex gap-10 items-center">
+          <button onclick="langSelect(0)" class="offers-arrowLeft">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mt-2"
+            >
+              <path
+                d="M4.95835 14.3199L22.4583 14.3199"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.0164 21.3484L4.95812 14.3204L12.0164 7.29126"
+                stroke="#747D88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <p class="option-title">Выберите язык</p>
+        </div>
+      </div>
+      <button onclick="langSelect(2)" class="option-lang__select">
+        <p class="option-select__text">RU</p>
+      </button>
+      <button onclick="langSelect(3)" class="option-lang__select">
+        <p class="option-select__text">AZ</p>
+      </button>
+      <button onclick="langSelect(4)" class="option-lang__select">
+        <p class="option-select__text">EN</p>
+      </button>
+    </div>
     <header class="header border">
       <div class="header-box">
         <img src="../images/Çayevoy.svg" alt="" class="logo-normal" />
         <img src="../images/Plus.svg" alt="" class="logo-plus" />
       </div>
       <img src="../images/Logo.svg" alt="" class="logo" />
-      <button class="header-lang">ru</button>
+      <button onclick="langSelect(1)" id="header-lang" class="header-lang">
+        ru
+      </button>
     </header>
     <div
-      onclick="modalDown()"
-      id="option_back"
+      onclick="sortingDate(0)"
+      id="option_back1"
       class="option_back hidden"
     ></div>
-    <div id="option" class="option hidden">
+    <div id="option1" class="option hidden">
       <div class="flex items-center justify-between option-filter">
         <div class="flex gap-10 items-center">
-          <button onclick="modalDown()" class="offers-arrowLeft">
+          <button onclick="sortingDate(0)" class="offers-arrowLeft">
             <svg
               width="28"
               height="28"
@@ -53,19 +101,16 @@
           </button>
           <p class="option-title">Период</p>
         </div>
-        <button class="select-res">Сбросить</button>
+        <button onclick="sortingDate(0)" class="select-res">Сбросить</button>
       </div>
-      <button class="option-select">
+      <button onclick="sortingDate(2)" class="option-select">
+        <p class="option-select__text">За день</p>
+      </button>
+      <button onclick="sortingDate(3)" class="option-select">
         <p class="option-select__text">За неделю</p>
       </button>
-      <button class="option-select">
-        <p class="option-select__text">За неделю</p>
-      </button>
-      <button class="option-select">
-        <p class="option-select__text">За неделю</p>
-      </button>
-      <button class="option-select">
-        <p class="option-select__text">За неделю</p>
+      <button onclick="sortingDate(4)" class="option-select">
+        <p class="option-select__text">За месяц</p>
       </button>
     </div>
     <section id="oneOffer" class="offers-section pb-15">
@@ -155,13 +200,15 @@
         </svg>
         <div class="stat-block mt-8">
           <div class="flex items-center justify-between">
-            <h6 class="stat-text">Оставлено чаевых сегодня</h6>
+            <h6 class="stat-text">
+              Оставлено чаевых <span class="dateOne stat-text"> сегодня</span>
+            </h6>
           </div>
-          <p class="stat-num">15 000 шт</p>
+          <p class="stat-num">15 000 ₼</p>
         </div>
       </button>
-      <div class="flex items-center gap-22 mt-15">
-        <button onclick="modalDown()" class="select-btn">
+      <div class="flex items-center gap-22 mt-15 justify-between">
+        <button onclick="sortingDate(1)" class="select-btn">
           Период
           <svg
             width="12"
@@ -178,84 +225,60 @@
             />
           </svg>
         </button>
-        <button onclick="modalDown()" class="select-btn">
-          По ресторану
-          <svg
-            width="12"
-            height="8"
-            viewBox="0 0 12 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M10.8835 0.361938L11.8198 1.30475L6.05481 7.10949L0.289795 1.30475L1.22615 0.361938L6.05481 5.22387L10.8835 0.361938Z"
-              fill="#747D88"
-            />
-          </svg>
-        </button>
-        <button class="select-res">Сбросить</button>
+        <button onclick="sortingDate(2)" class="select-res">Сбросить</button>
       </div>
       <div class="mt-30">
         <div class="date-info">
-          <p class="date">19.01.2023</p>
-          <div class="flex gap-15 mt-15">
+          <p class="date">19.01</p>
+          <div class="flex items-center gap-15 mt-15">
             <p class="date-pay">200 ₼</p>
             <div>
               <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
             </div>
           </div>
         </div>
         <div class="date-info">
-          <p class="date">19.01.2023</p>
-          <div class="flex gap-15 mt-15">
+          <p class="date">19.01</p>
+          <div class="flex items-center gap-15 mt-15">
             <p class="date-pay">200 ₼</p>
             <div>
               <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
             </div>
           </div>
-          <div class="flex gap-15 mt-15">
+          <div class="flex items-center gap-15 mt-15">
             <p class="date-pay">200 ₼</p>
             <div>
               <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
-            </div>
-          </div>
-        </div>
-        <div class="date-info">
-          <p class="date">19.01.2023</p>
-          <div class="flex gap-15 mt-15">
-            <p class="date-pay">200 ₼</p>
-            <div>
-              <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
-            </div>
-          </div>
-          <div class="flex gap-15 mt-15">
-            <p class="date-pay">200 ₼</p>
-            <div>
-              <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
             </div>
           </div>
         </div>
         <div class="date-info">
-          <p class="date">19.01.2023</p>
-          <div class="flex gap-15 mt-15">
+          <p class="date">19.01</p>
+          <div class="flex items-center gap-15 mt-15">
             <p class="date-pay">200 ₼</p>
             <div>
               <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
             </div>
           </div>
-          <div class="flex gap-15 mt-15">
+          <div class="flex items-center gap-15 mt-15">
             <p class="date-pay">200 ₼</p>
             <div>
               <p class="date-count__pay">5 оплаченных чаевых</p>
-              <p class="date-count__actions">10 обслужанных заказов</p>
+            </div>
+          </div>
+        </div>
+        <div class="date-info">
+          <p class="date">19.01</p>
+          <div class="flex items-center gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-15 mt-15">
+            <p class="date-pay">200 ₼</p>
+            <div>
+              <p class="date-count__pay">5 оплаченных чаевых</p>
             </div>
           </div>
         </div>
@@ -263,19 +286,37 @@
       <div class="bottom"></div>
     </section>
     <script>
-      let isModal = false;
-
-      function modalDown() {
-        if (!isModal) {
-          document.getElementById("option_back").classList.remove("hidden");
-          document.getElementById("option").classList.remove("hidden");
-          isModal = !isModal;
-        } else {
-          document.getElementById("option_back").classList.add("hidden");
-          document.getElementById("option").classList.add("hidden");
-          isModal = !isModal;
+      function sortingDate(id) {
+        if (id === 0) {
+          document.getElementById("option_back1").classList.add("hidden");
+          document.getElementById("option1").classList.add("hidden");
+        } else if (id === 1) {
+          document.getElementById("option_back1").classList.remove("hidden");
+          document.getElementById("option1").classList.remove("hidden");
+        } else if (id === 2) {
+          document.getElementById("option_back1").classList.add("hidden");
+          document.getElementById("option1").classList.add("hidden");
+          let count = document.querySelectorAll(".dateOne");
+          for (let i = 0; i <= count.length; i++) {
+            count[i].innerHTML = "сегодня";
+          }
+        } else if (id === 3) {
+          document.getElementById("option_back1").classList.add("hidden");
+          document.getElementById("option1").classList.add("hidden");
+          let count = document.querySelectorAll(".dateOne");
+          for (let i = 0; i <= count.length; i++) {
+            count[i].innerHTML = "за неделю";
+          }
+        } else if (id == 4) {
+          document.getElementById("option_back1").classList.add("hidden");
+          document.getElementById("option1").classList.add("hidden");
+          let count = document.querySelectorAll(".dateOne");
+          for (let i = 0; i <= count.length; i++) {
+            count[i].innerHTML = "за месяц";
+          }
         }
       }
     </script>
+    <script src="../js/default.js"></script>
   </body>
 </html>
