@@ -1246,3 +1246,8 @@ section {
 .-translateY {
   transform: translateY(100%);
 }
+
+.ct-chart {
+  width: 100%;
+  margin: 0 auto;
+}

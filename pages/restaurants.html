@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../fonts/sf/stylesheet.css" />
     <link rel="stylesheet" href="../fonts/font/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <title>Çayevoy</title>
   </head>
   <body>
@@ -435,63 +440,8 @@
             />
           </svg>
         </div>
-        <div class="flex mt-15">
-          <div class="chart-scale">
-            <span class="chart-scale__text">100</span>
-            <span class="chart-scale__text">90</span>
-            <span class="chart-scale__text">80</span>
-            <span class="chart-scale__text">70</span>
-            <span class="chart-scale__text">60</span>
-            <span class="chart-scale__text">50</span>
-            <span class="chart-scale__text">40</span>
-            <span class="chart-scale__text">30</span>
-            <span class="chart-scale__text">20</span>
-            <span class="chart-scale__text">10</span>
-          </div>
-          <div class="chart-info">
-            <div class="flex chart-info__graghs">
-              <div class="chart-info__gragh chart-70"></div>
-              <div class="chart-info__gragh chart-80"></div>
-              <div class="chart-info__gragh chart-60"></div>
-              <div class="chart-info__gragh chart-70"></div>
-              <div class="chart-info__gragh chart-80"></div>
-              <div class="chart-info__gragh chart-60"></div>
-              <div class="chart-info__gragh chart-70"></div>
-              <div class="chart-info__gragh chart-80"></div>
-              <div class="chart-info__gragh chart-60"></div>
-              <div class="chart-info__gragh chart-70"></div>
-              <div class="chart-info__gragh chart-80"></div>
-            </div>
-          </div>
-        </div>
-        <div class="flex ml-20 items-center mt-11 justify-between">
-          <div class="flex items-center gap-5 chart-times">
-            <span class="chart-time">9:00</span>
-            <span class="chart-time">10:00</span>
-            <span class="chart-time">11:00</span>
-            <span class="chart-time">12:00</span>
-            <span class="chart-time">13:00</span>
-            <span class="chart-time">14:00</span>
-            <span class="chart-time">15:00</span>
-            <span class="chart-time">16:00</span>
-            <span class="chart-time">17:00</span>
-            <span class="chart-time">18:00</span>
-          </div>
-          <svg
-            width="12"
-            height="8"
-            viewBox="0 0 12 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="rotate-90"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M10.8835 0.361938L11.8198 1.30475L6.05481 7.10949L0.289795 1.30475L1.22615 0.361938L6.05481 5.22387L10.8835 0.361938Z"
-              fill="#747D88"
-            />
-          </svg>
+        <div class="mt-15">
+          <div class="ct-chart"></div>
         </div>
       </div>
       <div class="flex items-center gap-22 mt-15">
@@ -1007,6 +957,34 @@
               </svg>`;
         }
       }
+    </script>
+    <script>
+      var data = {
+        labels: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
+        series: [
+          [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+          [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
+        ],
+      };
+
+      var options = {
+        seriesBarDistance: 10,
+      };
+
+      new Chartist.Bar(".ct-chart", data, options);
     </script>
   </body>
 </html>
